@@ -36,19 +36,14 @@ namespace DailyProgrammer_Template
         {
         }
 
-        /// <summary>
-        /// Simple function to illustrate how to use tests
-        /// </summary>
-        /// <param name="inputInteger"></param>
-        /// <returns></returns>
-        public static int MyTestFunction(int inputInteger)
-        {
-            return inputInteger;
-        }
     }
 
+    /// <summary>
+    /// Contains functions to convert a Roman Numeral to a number or a number to a Roman Numeral
+    /// </summary>
     class RomanNumeralConverter
     {
+        //relates Roman Numeral to its number value, used to convert a Roman Numeral to a number
         public enum RomNum
         {
             I = 1,
@@ -66,6 +61,7 @@ namespace DailyProgrammer_Template
             M = 1000
         }
 
+        //relates Roman Numeral to its number value, used to convert a number to a Roman Numeral
         public string[,] intAndRom = new string[,]
         {
             {"M", "1000"},
@@ -83,38 +79,55 @@ namespace DailyProgrammer_Template
             {"I", "1"},
         };
 
+        //Constructor
         public RomanNumeralConverter() { }
 
+        /// <summary>
+        /// Converts a Roman Numeral to a number
+        /// </summary>
+        /// <param name="romanNum">Roman Numeral to convert</param>
+        /// <returns>converted to a number</returns>
         public int RomanToNumber(string romanNum)
         {
-            //int test = (int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[0].ToString()));
-            int returnedNumber = 0;
+            //variable to hold number converted from Roman Numeral input
+            int convertedNumber = 0;
             for (int i = 0; i < romanNum.Length; i++)
             {
+                //if Roman Numeral value at current index is less than next Roman Numeral value in string then subtract its value, otherwise add it
                 if (i < romanNum.Length -1 &&(((int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i].ToString()))) < ((int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i + 1].ToString())))))
                 {
-                    returnedNumber -= (int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i].ToString()));
+                    convertedNumber -= (int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i].ToString()));
                 }
                 else
                 {
-                    returnedNumber += (int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i].ToString()));
+                    convertedNumber += (int)((RomNum)Enum.Parse(typeof(RomNum), romanNum[i].ToString()));
                 }
             }
-            return returnedNumber;
+            return convertedNumber;
         }
 
+        /// <summary>
+        /// Converts a number to a Roman Numeral
+        /// </summary>
+        /// <param name="intNum">number to convert</param>
+        /// <returns>converted to a Roman Numeral</returns>
         public string NumberToRoman(int intNum)
         {
-            string returnedRoman = string.Empty;
+            //string to hold Roman Numeral converter from number input
+            string convertedRoman = string.Empty;
+            //loop through array (Length/2 because it's a 2 dimensional array)
             for (int i = 0; i < intAndRom.Length/2; i++)
             {
+                //try subtracting highest valued Roman Numeral from input number, continue until that RN's value is greater than remaining value of input number.
+                //then proceed with next lowest valued Roman Numeral, until all have been exhausted and input number is 0.
+                //each time you can perform the subtraction add that Roman Numeral to the string.
                 while (intNum - (int.Parse(intAndRom[i, 1])) >= 0)
                 {
                     intNum -= int.Parse(intAndRom[i, 1]);
-                    returnedRoman += intAndRom[i, 0];
+                    convertedRoman += intAndRom[i, 0];
                 }
             }
-            return returnedRoman;
+            return convertedRoman;
         }
     }
 

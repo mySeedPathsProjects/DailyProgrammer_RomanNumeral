@@ -14,3 +14,11 @@ C:\Users\nstephens\Documents\GitHub\DailyProgrammer-Template\DailyProgrammer-Tem
 C:\Users\nstephens\Documents\GitHub\DailyProgrammer-Template\DailyProgrammer-Template\DailyProgrammer-Template\bin\Debug\nunit.framework.dll
 C:\Users\nstephens\Documents\GitHub\DailyProgrammer-Template\DailyProgrammer-Template\DailyProgrammer-Template\bin\Debug\nunit.framework.xml
 C:\Users\nstephens\Documents\GitHub\DailyProgrammer-Template\DailyProgrammer-Template\DailyProgrammer-Template\obj\Debug\DailyProgrammer-Template.csprojResolveAssemblyReference.cache
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\bin\Debug\DailyProgrammer-Template.exe.config
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\obj\Debug\DailyProgrammer-Template.exe
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\obj\Debug\DailyProgrammer-Template.pdb
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\bin\Debug\DailyProgrammer-Template.exe
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\bin\Debug\DailyProgrammer-Template.pdb
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\bin\Debug\nunit.framework.dll
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\bin\Debug\nunit.framework.xml
+C:\Users\nstephens\Documents\GitHub\DailyProgrammer_RomanNumeral\DailyProgrammer-RomanNumeral\DailyProgrammer-Template\obj\Debug\DailyProgrammer-Template.csprojResolveAssemblyReference.cache
